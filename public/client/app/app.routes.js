@@ -59,4 +59,7 @@ angular.module('booklist', [
       $location.path('/');
     }
   });
+}])
+.run(['$rootScope', function ($rootScope) {
+  $rootScope.reactions = ['Love It', 'Like It', 'Decent', 'Dislike It', 'Hate It'];
 }]);
